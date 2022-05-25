@@ -76,6 +76,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 @media (max-width: 600px) {
   .cardContainer {
     height: auto !important;
