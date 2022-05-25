@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tomorrowland</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./style.css " />
+    <link rel="stylesheet" href="./jqm/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="./jqm/custom-theme.css" />
+    <script src="./timer/timer.js"></script>
+    <script src="./jqm/jquery.min.js"></script>
+    <script src="./jqm/jquery.mobile-1.4.5.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="home">
+      <div
+        data-role="panel"
+        id="mypanel"
+        data-position="left"
+        data-display="overlay"
+      >
+        <nav>
+          <ul data-role="listview">
+            <li><a data-transition="pop" href="#">Home</a></li>
+            <li><a data-transition="pop" href="#lineup">Line Up</a></li>
+            <li><a data-transition="pop" href="#radio">Radio</a></li>
+            <li><a data-transition="pop" href="#location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu" data-role="header">
+        <div class="nav-button">
+          <a href="#mypanel" style="border-color: transparent"
+            ><img class="logo" src="./assets/icons/hamBtn.svg" alt="logo" />
+          </a>
+        </div>
+        <div>
+          <h3>Tomorrowland</h3>
+        </div>
+        <div>
+          <a href="#home">
+            <img class="logo" src="./assets/icons/Logo.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div role="main" class="ui-content">
+        <section class="center-vertical">
+          <h2 class="title-c">
+            Check out the <span class="important-text">dates</span><br />
+            and
+            <span class="important-text">time of the concerts</span>
+          </h2>
+          <div class="center-vertical button-group">
+            <a href="#lineup"
+              ><button class="button-light" data-theme="b">Line up</button></a
+            >
+            <a href="#location"><button class="button">Info</button></a>
+          </div>
+        </section>
+
+        <section class="center-vertical">
+          <h2 class="title-b">Time remaining until Tomorrowland starts</h2>
+          <p class="info-a" id="time"></p>
+        </section>
+
+        <section class="center-vertical">
+          <h2 class="title-d">Festival Days</h2>
+          <div class="card" data-target="card">
+            <img class="card-img" src="./assets/icons/img_home_01.jpg" alt="" />
+            <div class="card-container">
+              <p class="card-sub">Day one</p>
+              <h3 class="card-title">Nicky Romero</h3>
+              <p class="card-text">Nicky Romero & Laidback Luke honor Avicii</p>
+            </div>
+          </div>
+          <div class="card" data-target="card">
+            <img class="card-img" src="./assets/icons/img_home_02.jpg" alt="" />
+            <div class="card-container">
+              <p class="card-sub">Day one</p>
+              <h3 class="card-title">Nicky Romero</h3>
+              <p class="card-text">Nicky Romero & Laidback Luke honor Avicii</p>
+            </div>
+          </div>
+          <div class="card" data-target="card">
+            <img
+              class="card-img"
+              src="./assets/icons/img_home_03.jpg"
+              alt="img01"
+            />
+            <div class="card-container">
+              <p class="card-sub">Day one</p>
+              <h3 class="card-title">Nicky Romero</h3>
+              <p class="card-text">Nicky Romero & Laidback Luke honor Avicii</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <a href="./modal.html" data-dialog="true" data-transition="pop"
+            ><button class="button pop">Creadores</button></a
+          >
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://www.instagram.com/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/instagram.png"
+              alt="ig"
+          /></a>
+          <a
+            href="https://www.spotify.com/bo/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/spotify.png"
+              alt="spotify"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="lineup">
+      <div
+        data-role="panel"
+        id="mypanelDos"
+        data-position="left"
+        data-display="overlay"
+      >
+        <nav>
+          <ul data-role="listview">
+            <li><a data-transition="pop" href="#home">Home</a></li>
+            <li><a data-transition="pop" href="#">Line Up</a></li>
+            <li><a data-transition="pop" href="#radio">Radio</a></li>
+            <li><a data-transition="pop" href="#location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu" data-role="header">
+        <div class="nav-button">
+          <a href="#mypanelDos" style="border-color: transparent"
+            ><img class="logo" src="./assets/icons/hamBtn.svg"
+          /></a>
+        </div>
+        <div>
+          <h3>Tomorrowland</h3>
+        </div>
+        <div>
+          <a href="#home">
+            <img class="logo" src="./assets/icons/Logo.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div role="main" class="ui-content">
+        <section class="space">
+          <div>
+            <h1 class="title-a">
+              Our <span class="important-text">line up</span>
+            </h1>
+
+            <h3 class="title-e">
+              Check out the <span class="important-text">dates</span> <br />
+              and
+              <span class="important-text">time of the shows</span>
+            </h3>
+          </div>
+        </section>
+
+        <section>
+          <div
+            data-role="collapsibleset"
+            data-inset="false"
+            data-theme="b"
+            data-iconpos="right"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3 class="date-text">Day one 12/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Tiesto</p>
+                  </div>
+                  <div class="item">
+                    <p>7PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>David Guetta</p>
+                  </div>
+                  <div class="item">
+                    <p>10PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Alesso</p>
+                  </div>
+                  <div class="item">
+                    <p>6PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Dimitri Vegas</p>
+                  </div>
+                  <div class="item">
+                    <p>8:30PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-role="collapsible">
+              <h3 class="date-text">Day two 13/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Afrojack</p>
+                  </div>
+                  <div class="item">
+                    <p>7:30PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Trevor Guthrie</p>
+                  </div>
+                  <div class="item">
+                    <p>9PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Martin Garrix</p>
+                  </div>
+                  <div class="item">
+                    <p>6PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Aly and Fila</p>
+                  </div>
+                  <div class="item">
+                    <p>11PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-role="collapsible">
+              <h3 class="date-text">Day three 14/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Calvin Harris</p>
+                  </div>
+                  <div class="item">
+                    <p>17:30PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Steve Aoki</p>
+                  </div>
+                  <div class="item">
+                    <p>8PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Marshmello</p>
+                  </div>
+                  <div class="item">
+                    <p>6:45PM</p>
+                  </div>
+                </div>
+                <div class="item-container">
+                  <div class="item">
+                    <p>Armin Van Buuren</p>
+                  </div>
+                  <div class="item">
+                    <p>10PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <a href="modal.html" data-dialog="true" data-transition="pop"
+            ><button class="button pop">Creadores</button></a
+          >
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://www.instagram.com/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/instagram.png"
+              alt="ig"
+          /></a>
+          <a
+            href="https://www.spotify.com/bo/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/spotify.png"
+              alt="spotify"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="location">
+      <div
+        data-role="panel"
+        id="mypanelTres"
+        data-position="left"
+        data-display="overlay"
+      >
+        <nav>
+          <ul data-role="listview">
+            <li><a data-transition="pop" href="#home">Home</a></li>
+            <li><a data-transition="pop" href="#lineup">Line Up</a></li>
+            <li><a data-transition="pop" href="#radio">Radio</a></li>
+            <li><a data-transition="pop" href="#location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu" data-role="header">
+        <div class="nav-button">
+          <a href="#mypanelTres" style="border-color: transparent"
+            ><img class="logo" src="./assets/icons/hamBtn.svg"
+          /></a>
+        </div>
+        <div>
+          <h3>Tomorrowland</h3>
+        </div>
+        <div>
+          <a href="#home">
+            <img class="logo" src="./assets/icons/Logo.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div role="main" class="ui-content">
+        <section>
+          <div>
+            <h1 class="title-a">
+              Our <span class="important-text">Location</span>
+            </h1>
+            <h3 class="title-e">
+              Everything
+              <span class="important-text">you need to know</span><br />
+              <span class="important-text">to get there</span>
+            </h3>
+          </div>
+        </section>
+
+        <section class="center-vertical limit">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.6799534832576!2d6.065984466074384!3d45.09228281620258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a6b06856c6cdb%3A0x9e63e54e3531c7ab!2sL&#39;Alpe%20d&#39;Huez%2C%2038750%20Huez%2C%20Francia!5e0!3m2!1ses!2sar!4v1650593605232!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            class="map-full"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <a
+            href="https://www.google.com/maps/dir//L'Alpe+d'Huez+38750+Huez+Francia/@45.0923807,6.0683611,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x478a6b06856c6cdb:0x9e63e54e3531c7ab!2m2!1d6.0683611!2d45.0923807"
+            target="_blank"
+          >
+            <button data-theme="b" class="button-light special-btn">
+              Open maps
+            </button>
+          </a>
+
+          <div class="location-container">
+            <div class="location-item">
+              <img src="./assets/icons/location.png" />
+              <p class="title-f">Alpe Huez</p>
+            </div>
+            <div class="location-item">
+              <img src="./assets/icons/reloj.png" />
+              <p class="title-f">Starts at 12 am</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <a href="modal.html" data-dialog="true" data-transition="pop"
+            ><button class="button pop">Creadores</button></a
+          >
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://www.instagram.com/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/instagram.png"
+              alt="ig"
+          /></a>
+          <a
+            href="https://www.spotify.com/bo/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/spotify.png"
+              alt="spotify"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="radio">
+      <div
+        data-role="panel"
+        id="mypanelCuatro"
+        data-position="left"
+        data-display="overlay"
+      >
+        <nav>
+          <ul data-role="listview">
+            <li><a data-transition="pop" href="#home">Home</a></li>
+            <li><a data-transition="pop" href="#lineup">Line Up</a></li>
+            <li><a data-transition="pop" href="#">Radio</a></li>
+            <li><a data-transition="pop" href="#location">Location</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu" data-role="header">
+        <div class="nav-button">
+          <a href="#mypanelCuatro" style="border-color: transparent"
+            ><img class="logo" src="./assets/icons/hamBtn.svg"
+          /></a>
+        </div>
+        <div>
+          <h3>Tomorrowland</h3>
+        </div>
+        <div>
+          <a href="#home">
+            <img class="logo" src="./assets/icons/Logo.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div role="main" class="ui-content">
+        <section class="space">
+          <div>
+            <h1 class="title-a">
+              Our <span class="important-text">radio</span>
+            </h1>
+
+            <h3 class="title-e">
+              The sound <span class="important-text">of Tomorrowland</span>
+              <br />
+              on your phone
+            </h3>
+            <section class="center-vertical">
+              <img
+                class="image-full"
+                src="./assets/icons/img_radio.png"
+                alt=""
+              />
+              <a href="https://www.spotify.com/bo/" target="_blank">
+                <button data-theme="b" class="button-light special-btn">
+                  Open in Spotify
+                </button>
+              </a>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <a href="modal.html" data-dialog="true" data-transition="pop"
+            ><button class="button pop">Creadores</button></a
+          >
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://www.instagram.com/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/instagram.png"
+              alt="ig"
+          /></a>
+          <a
+            href="https://www.spotify.com/bo/"
+            class="special-icon"
+            target="_blank"
+            ><img
+              class="icons_footer"
+              src="./assets/icons/spotify.png"
+              alt="spotify"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="jqm/carrousel.js"></script>
+  </body>
+</html>
