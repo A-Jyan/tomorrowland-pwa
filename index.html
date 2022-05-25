@@ -14,13 +14,14 @@
     <script src="app/timer/timer.js"></script>
   </head>
   <body>
-    <div class="container-md my-5">
+    <section class="container-md my-5">
       <div class="row">
         <div
-          class="col-12 d-flex flex-column justify-content-center items-center text-center"
+          class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
         >
           <h2 class="bigTitle">Time remaining until tomorrowland starts</h2>
           <p class="info-a timePersonalized" id="time"></p>
+          <div class="border-bottom w-50 my-5"></div>
         </div>
         <div
           class="col-12 d-flex flex-column justify-content-center items-center text-center"
@@ -30,15 +31,15 @@
             class="col-12 d-flex flex-column flex-sm-row justify-content-center my-4 align-items-center"
           >
             <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center"
+              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
             >
-              <div class="card cardPersonalized w-100 h-100">
+              <div class="card cardPersonalized">
                 <img
                   src="./images/nicky-romero.png"
                   class="card-img-top imagePersonalized"
                   alt="Nicky Romero"
                 />
-                <div class="card-body w-100 h-100">
+                <div class="card-body">
                   <p class="cardTitle">Day One</p>
                   <p class="cardArtist">Nicky Romero</p>
                   <p class="cardExtra">
@@ -48,15 +49,15 @@
               </div>
             </div>
             <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center"
+              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
             >
-              <div class="card cardPersonalized w-100 h-100">
+              <div class="card cardPersonalized">
                 <img
                   src="./images/tiesto-t.png"
                   class="card-img-top"
                   alt="Nicky Romero"
                 />
-                <div class="card-body w-100 h-100">
+                <div class="card-body">
                   <p class="cardTitle">Day One</p>
                   <p class="cardArtist">Tiesto</p>
                   <p class="cardExtra">Massano and Steve Aoki</p>
@@ -64,15 +65,15 @@
               </div>
             </div>
             <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center"
+              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
             >
-              <div class="card cardPersonalized w-100 h-100">
+              <div class="card cardPersonalized">
                 <img
                   src="./images/dimitri-vegas.png"
                   class="card-img-top"
                   alt="Nicky Romero"
                 />
-                <div class="card-body w-100 h-100">
+                <div class="card-body">
                   <p class="cardTitle">Day One</p>
                   <p class="cardArtist">Dimitri Vegas & Like Mike</p>
                   <p class="cardExtra">Sebastian Ingrosso and Martin Garrix</p>
@@ -82,7 +83,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -45,21 +45,27 @@ body {
   padding: 0.5rem;
   margin: 0 1rem;
   border-radius: 0 !important;
+  height: 100% !important;
+}
+.cardContainer {
+  height: 100% !important;
 }
 
 .cardTitle {
   font-family: "Roboto-Medium";
   color: #ff28a9;
+  font-size: 1.2rem;
 }
 .cardArtist {
   color: black;
   font-family: "Roboto-Regular";
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 .cardExtra {
   color: black;
   font-family: "Roboto-Light";
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .cardTitle,
@@ -71,6 +77,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .cardContainer {
+    height: auto !important;
+  }
   .cardTitle {
     font-size: 1rem;
   }
@@ -78,15 +87,14 @@ body {
     font-size: 1rem;
   }
   .cardExtra {
-    color: black;
-    font-family: "Roboto-Light";
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .bigTitle {
     font-family: "Roboto-Bold";
     font-size: 1.4rem;
     color: white;
     margin-bottom: 2rem;
+    padding: 0 2.7rem 0 2.7rem;
   }
   .titlePersonalized {
     font-family: "Roboto-Medium";
