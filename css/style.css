@@ -70,6 +70,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 @media (max-width: 600px) {
   .cardTitle {
     font-size: 1rem;
