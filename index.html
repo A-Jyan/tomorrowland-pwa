@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,81 +10,473 @@
       crossorigin="anonymous"
     />
     <script src="app/timer/timer.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <section class="container-md my-5">
-      <div class="row">
+
+  <video autoplay muted loop class="video">
+    <source src="images/banner.mp4" type="video/mp4">
+  </video>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 linear-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand m-0" href="#">
+        <img
+          src="images/Logo.png"
+          alt="tomorrowland logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+      <button
+        class="navbar-toggler m-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-md-end"
+        id="navbarTogglerDemo01"
+      >
+        <ul class="navbar-nav mb-2 mb-lg-0 m-0" style="width: 100%">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Line-up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Radio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body class="container-fluid">
+    <div class="row header">
+
+      <div class="col-12 d-flex flex-column justify-content-center">
+        <h1 class="bigger-title text-center">
+          Tomorrowland App
+        </h1>
+      </div>
+
+      <div class="col-12 d-flex flex-column justify-content-center">
+        <h1 class="bigTitle text-center">
+          Check out the dates and time of the concerts
+        </h1>
+      </div>
+
+        <a class="mt-5 p-3 col-3 btn-color text-center" href="#">Line up</a>
+
         <div
-          class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
-        >
-          <h2 class="bigTitle">Time remaining until tomorrowland starts</h2>
-          <p class="info-a timePersonalized" id="time"></p>
-          <div class="border-bottom w-50 my-5"></div>
-        </div>
-        <div
-          class="col-12 d-flex flex-column justify-content-center items-center text-center"
-        >
-          <h3 class="my-4 titlePersonalized">Festival days</h3>
+        class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <h2 class="bigTitle my-4">
+          Time remaining until tomorrowland starts
+        </h2>
+        <p class="info-a timePersonalized" id="time"></p>
+        
+        <div class="border-bottom w-50 my-5 d-none"></div>
+      </div>
+      
+        
+    </div>
+    <div class="row row-background">
+      <section class="container-md my-5">
+        <div class="row">
           <div
-            class="col-12 d-flex flex-column flex-sm-row justify-content-center my-4 align-items-center"
+            class="col-12 d-flex flex-column justify-content-center items-center text-center px-md-5"
           >
+            <h3 class="my-4 titlePersonalized">Festival days</h3>
             <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
+              class="col-12 d-flex flex-column flex-sm-row justify-content-center my-4 align-items-center"
             >
-              <div class="card cardPersonalized">
-                <img
-                  src="./images/nicky-romero.png"
-                  class="card-img-top imagePersonalized"
-                  alt="Nicky Romero"
-                />
-                <div class="card-body">
-                  <p class="cardTitle">Day One</p>
-                  <p class="cardArtist">Nicky Romero</p>
-                  <p class="cardExtra">
-                    Nicky Romero and Laidback Luke honor Avicii
-                  </p>
+              <div
+                class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
+              >
+                <div class="card cardPersonalized">
+                  <img
+                    src="./images/nicky-romero.png"
+                    class="card-img-top imagePersonalized"
+                    alt="Nicky Romero"
+                  />
+                  <div class="card-body m-0 py-2">
+                    <p class="cardTitle">Day One</p>
+                    <p class="cardArtist">Nicky Romero</p>
+                    <p class="cardExtra">
+                      Nicky Romero and Laidback Luke honor Avicii
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
-            >
-              <div class="card cardPersonalized">
-                <img
-                  src="./images/tiesto-t.png"
-                  class="card-img-top"
-                  alt="Nicky Romero"
-                />
-                <div class="card-body">
-                  <p class="cardTitle">Day One</p>
-                  <p class="cardArtist">Tiesto</p>
-                  <p class="cardExtra">Massano and Steve Aoki</p>
+              <div
+                class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
+              >
+                <div class="card cardPersonalized">
+                  <img
+                    src="./images/tiesto-t.png"
+                    class="card-img-top"
+                    alt="Nicky Romero"
+                  />
+                  <div class="card-body m-0 py-2">
+                    <p class="cardTitle">Day One</p>
+                    <p class="cardArtist">Tiesto</p>
+                    <p class="cardExtra">Massano and Steve Aoki</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
-            >
-              <div class="card cardPersonalized">
-                <img
-                  src="./images/dimitri-vegas.png"
-                  class="card-img-top"
-                  alt="Nicky Romero"
-                />
-                <div class="card-body">
-                  <p class="cardTitle">Day One</p>
-                  <p class="cardArtist">Dimitri Vegas & Like Mike</p>
-                  <p class="cardExtra">Sebastian Ingrosso and Martin Garrix</p>
+              <div
+                class="col-12 my-3 col-sm-4 d-flex flex-row justify-content-center cardContainer"
+              >
+                <div class="card cardPersonalized">
+                  <img
+                    src="./images/dimitri-vegas.png"
+                    class="card-img-top"
+                    alt="Nicky Romero"
+                  />
+                  <div class="card-body m-0 py-2">
+                    <p class="cardTitle">Day One</p>
+                    <p class="cardArtist">Dimitri Vegas & Like Mike</p>
+                    <p class="cardExtra">
+                      Sebastian Ingrosso and Martin Garrix
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- SOL -->
+      <section class="row accordionPersonalized">
+        <div class="w-75">
+          <h3 class="my-4 titlePersonalized text-center">Line Up</h3>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Day One - 12/04
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse bg-black collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row d-flex space-between">
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      Holy Grounds in Belgium
+                    </p>
+                    <p
+                      class="col-sm-6 text-right"
+                      style="text-align: right"
+                    ></p>
+                    <hr />
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <strong>Martin Garrix</strong>
+                    </p>
+                    <p
+                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      style="text-align: right"
+                    >
+                      <strong>12am</strong>
+                    </p>
+                    <hr />
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <strong>Dimitri Vegas and Like Mike</strong>
+                    </p>
+                    <p
+                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      style="text-align: right"
+                    >
+                      <strong>13am</strong>
+                    </p>
+                    <hr />
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <strong>Armin van Buuren</strong>
+                    </p>
+                    <p
+                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      style="text-align: right"
+                    >
+                      <strong>14am</strong>
+                    </p>
+                    <hr />
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <strong>Lost Frequencies y Paul Kalkbrenner</strong>
+                    </p>
+                    <p
+                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      style="text-align: right"
+                    >
+                      <strong>15am</strong>
+                    </p>
+                    <hr />
+                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <strong>Diplo</strong>
+                    </p>
+                    <p
+                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      style="text-align: right"
+                    >
+                      <strong>16am</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed p-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Day Two - 13/04
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse bg-black collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row d-flex space-between">
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        Holy Grounds in Belgium
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      ></p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Mayor Lazer </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 text-right py-2 px-4 py-md-3"
+                        style="text-align: right"
+                      >
+                        <strong>12am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Amelie Lens </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>13am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Robin Schulz </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>14am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Maceo Plex </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>15am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Topic</strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>16am</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed p-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Day Three - 14/04
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse bg-black collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row d-flex space-between">
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        Holy Grounds in Belgium
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      ></p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Adam Beyer </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>12am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Alan Walker</strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>13am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Carista</strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>14am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Nervo</strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>15am</strong>
+                      </p>
+                      <hr />
+                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                        <strong>Dax J b2b Kobosil </strong>
+                      </p>
+                      <p
+                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        style="text-align: right"
+                      >
+                        <strong>16am</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOL -->
+
+      <!-- Facu -->
+
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="section_spotify d-flex flex-column justify-content-center align-items-center"
+            >
+              <h2 class="timePersonalized text-center my-4">
+                Listen our playlist <span class="resaltado"> in Spotify </span>
+              </h2>
+              <iframe
+                class="frame_spotify mt-4"
+                src="https://open.spotify.com/embed/playlist/3VXReCeetN58c1clj9u8ZK?utm_source=generator"
+                height="330"
+                frameborder=""
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Termina Facu -->
+    </div>
+    <!-- Luqui -->
+    <div class="row row-background">
+      <footer>
+        <div class="row align-items-start px-4 py-3">
+          <div
+            class="col-12 col-md-3 align-items-center justify-content-center"
+          >
+            <div class="title mb-4 mb-md-0">
+              Nombre alumnos
+              <p class="txt-footer">Antonella Jotayan</p>
+              <p class="txt-footer">Hubert Lucas</p>
+              <p class="txt-footer">Cappone Sol</p>
+              <p class="txt-footer">Scuderi Facundo</p>
+              <p class="txt-footer">Acosta Alejandro</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0 title">
+            Carrera
+            <p class="txt-footer">Diseño multimedial</p>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0 title">
+            Materia
+            <p class="txt-footer">Desarrollo de aplicaciones multiplataforma</p>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0 title year">
+            Año
+            <p class="txt-footer">2022</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Luqui -->
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
   </body>

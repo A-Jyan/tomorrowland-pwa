@@ -19,6 +19,11 @@
   src: url("../app/assets/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
 }
 
+* {
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
 body {
   background-color: black !important;
 }
@@ -28,6 +33,7 @@ body {
   font-size: 2rem;
   color: white;
   margin-bottom: 2rem;
+  max-width: 80%;
 }
 .titlePersonalized {
   font-family: "Roboto-Medium";
@@ -42,8 +48,8 @@ body {
 }
 .cardPersonalized {
   background-color: white;
-  padding: 0.5rem;
-  margin: 0 1rem;
+  padding: 0.5rem !important;
+  margin: 0 1rem !important;
   border-radius: 0 !important;
   height: 100% !important;
 }
@@ -75,6 +81,8 @@ body {
   padding: 0;
   margin-bottom: 0.5rem;
 }
+
+
 
 @media (max-width: 600px) {
   .cardContainer {
@@ -108,3 +116,112 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+/* 
+Empieza CSS de Facu */
+
+.section_spotify {
+  width: 100%;
+  margin-bottom: 100px;
+  height: 600px;
+  background-image: url(../images/figure.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resaltado {
+  font-family: "Roboto-Bold";
+}
+
+.frame_spotify {
+  width: 70%;
+}
+
+@media (min-width: 600px) {
+  .frame_spotify {
+    width: 40%;
+  }
+}
+
+/* Termina CSS de Facu */
+
+/* Css luqui */
+footer {
+  margin-top: 5rem !important;
+  padding-top: 20px;
+  color: white;
+  background-color: black;
+}
+
+.title {
+  font-family: "Roboto-Bold";
+}
+
+.txt-footer {
+  font-family: "Roboto-Regular";
+}
+/* Css luqui */
+
+/* Css Ale */
+.bigger-title{
+  font-family: "Roboto-Bold";
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 80%;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.btn-color{
+  height: 6%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  text-decoration: none;
+  color: black;
+}
+.btn-color:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.row-background {
+  background-color: black;
+}
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  height: 100vh;
+}
+/* Css Ale */
+
+/* Sol */
+.accordionPersonalized p {
+  color: white;
+  font-family: "Roboto-Regular";
+}
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: white !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon) !important;
+}
+
+hr {
+  color: white !important;
+}
+
+/* Sol */
