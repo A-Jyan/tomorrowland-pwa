@@ -82,8 +82,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
-
 @media (max-width: 600px) {
   .cardContainer {
     height: auto !important;
