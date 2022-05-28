@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tomorrowland</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,19 +14,21 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
+  <!-- Nav -->
   <video autoplay muted loop class="video">
-    <source src="images/banner.mp4" type="video/mp4">
+    <source src="images/banner.mp4" type="video/mp4" />
   </video>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 linear-nav">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark bg-transparent p-3 linear-nav"
+  >
     <div class="container-fluid">
       <a class="navbar-brand m-0" href="#">
         <img
-          src="images/Logo.png"
+          src="images/logo.png"
           alt="tomorrowland logo"
-          width="30"
-          height="24"
           class="d-inline-block align-text-top"
+          id="logo"
         />
       </a>
       <button
@@ -48,55 +51,66 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Line-up</a>
+            <a class="nav-link active" href="#festivalDays">Festival days</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Radio</a>
+            <a class="nav-link active" href="#lineUp">Line-up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Location</a>
+            <a class="nav-link active" href="#radio">Radio</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <body class="container-fluid">
-    <div class="row header">
+  <!-- Nav -->
 
-      <div class="col-12 d-flex flex-column justify-content-center">
-        <h1 class="bigger-title text-center">
-          Tomorrowland App :)
-        </h1>
-      </div>
-
-      <div class="col-12 d-flex flex-column justify-content-center">
-        <h1 class="bigTitle text-center">
-          Check out the dates and time of the concerts
-        </h1>
-      </div>
-
-        <a class="mt-5 p-3 col-3 btn-color text-center" href="#">Line up</a>
+  <body>
+    <div class="container-fluid">
+      <!-- Banner -->
+      <section class="row header">
+        <div class="col-12 d-flex flex-column justify-content-center">
+          <h1 class="bigger-title text-center">Tomorrowland App :)</h1>
+        </div>
 
         <div
-        class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
-      >
-        <h2 class="bigTitle my-4">
-          Time remaining until tomorrowland starts
-        </h2>
-        <p class="info-a timePersonalized" id="time"></p>
-        
-        <div class="border-bottom w-50 my-5 d-none"></div>
-      </div>
-      
-        
-    </div>
-    <div class="row row-background">
-      <section class="container-md my-5">
-        <div class="row">
+          class="col-12 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="bigTitle text-center">
+            Check out the dates and time of the concerts
+          </h1>
+
+          <div class="lineUp">
+            <a
+              class="mt-5 p-3 col-12 col-md-3 text-center buttonContainer"
+              href="#lineUp"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center btn btn-color justify-content-center align-items-center buttonPersonalized"
+              >
+                <p>Line up</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Banner -->
+
+      <!-- Festival Days -->
+      <section class="container-md my-5 py-5" id="festivalDays">
+        <div class="row px-3">
+          <div
+            class="col-12 d-flex flex-column justify-content-center align-items-center text-center my-5 py-5 border border-4"
+          >
+            <h2 class="bigTitle my-4">
+              Time remaining until tomorrowland starts
+            </h2>
+            <p class="info-a timePersonalized" id="time"></p>
+          </div>
           <div
             class="col-12 d-flex flex-column justify-content-center items-center text-center px-md-5"
           >
-            <h3 class="my-4 titlePersonalized">Festival days</h3>
+            <h3 class="my-5 titlePersonalized pt-5">Festival days</h3>
             <div
               class="col-12 d-flex flex-column flex-sm-row justify-content-center my-4 align-items-center"
             >
@@ -156,9 +170,10 @@
           </div>
         </div>
       </section>
+      <!-- Festival Days -->
 
-      <!-- SOL -->
-      <section class="row accordionPersonalized">
+      <!-- Lineup -->
+      <section class="row accordionPersonalized my-5 py-5" id="lineUp">
         <div class="w-75">
           <h3 class="my-4 titlePersonalized text-center">Line Up</h3>
 
@@ -184,62 +199,58 @@
               >
                 <div class="accordion-body">
                   <div class="row d-flex space-between">
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-12 py-2 px-4 py-md-3 text-bold">
                       Holy Grounds in Belgium
                     </p>
-                    <p
-                      class="col-sm-6 text-right"
-                      style="text-align: right"
-                    ></p>
                     <hr />
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-6 py-2 px-4 py-md-3">
                       <strong>Martin Garrix</strong>
                     </p>
                     <p
-                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      class="col-6 py-2 px-4 py-md-3"
                       style="text-align: right"
                     >
                       <strong>12am</strong>
                     </p>
                     <hr />
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-6 py-2 px-4 py-md-3">
                       <strong>Dimitri Vegas and Like Mike</strong>
                     </p>
                     <p
-                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      class="col-6 py-2 px-4 py-md-3"
                       style="text-align: right"
                     >
-                      <strong>13am</strong>
+                      <strong>1pm</strong>
                     </p>
                     <hr />
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-6 py-2 px-4 py-md-3">
                       <strong>Armin van Buuren</strong>
                     </p>
                     <p
-                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      class="col-6 py-2 px-4 py-md-3"
                       style="text-align: right"
                     >
-                      <strong>14am</strong>
+                      <strong>2pm</strong>
                     </p>
                     <hr />
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-6 py-2 px-4 py-md-3">
                       <strong>Lost Frequencies y Paul Kalkbrenner</strong>
                     </p>
                     <p
-                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      class="col-6 py-2 px-4 py-md-3"
                       style="text-align: right"
                     >
-                      <strong>15am</strong>
+                      <strong>3pm</strong>
                     </p>
                     <hr />
-                    <p class="col-sm-6 py-2 px-4 py-md-3">
+                    <p class="col-6 py-2 px-4 py-md-3">
                       <strong>Diplo</strong>
                     </p>
                     <p
-                      class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                      class="col-6 py-2 px-4 py-md-3 text-right"
                       style="text-align: right"
                     >
-                      <strong>16am</strong>
+                      <strong>4pm</strong>
                     </p>
                   </div>
                 </div>
@@ -265,62 +276,58 @@
                 >
                   <div class="accordion-body">
                     <div class="row d-flex space-between">
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-12 py-2 px-4 py-md-3 text-bold">
                         Holy Grounds in Belgium
                       </p>
-                      <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
-                        style="text-align: right"
-                      ></p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Mayor Lazer </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Major Lazer</strong>
                       </p>
                       <p
-                        class="col-sm-6 text-right py-2 px-4 py-md-3"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
                         <strong>12am</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Amelie Lens </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Amelie Lens</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>13am</strong>
+                        <strong>1pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Robin Schulz </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Robin Schuls</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>14am</strong>
+                        <strong>2pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Maceo Plex </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Maceo Plex</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>15am</strong>
+                        <strong>3pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-6 py-2 px-4 py-md-3">
                         <strong>Topic</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3 text-right"
                         style="text-align: right"
                       >
-                        <strong>16am</strong>
+                        <strong>4pm</strong>
                       </p>
                     </div>
                   </div>
@@ -347,62 +354,58 @@
                 >
                   <div class="accordion-body">
                     <div class="row d-flex space-between">
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-12 py-2 px-4 py-md-3 text-bold">
                         Holy Grounds in Belgium
                       </p>
-                      <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
-                        style="text-align: right"
-                      ></p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Adam Beyer </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Adam Beyer</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
                         <strong>12am</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-6 py-2 px-4 py-md-3">
                         <strong>Alan Walker</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>13am</strong>
+                        <strong>1pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-6 py-2 px-4 py-md-3">
                         <strong>Carista</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>14am</strong>
+                        <strong>2pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
+                      <p class="col-6 py-2 px-4 py-md-3">
                         <strong>Nervo</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3"
                         style="text-align: right"
                       >
-                        <strong>15am</strong>
+                        <strong>3pm</strong>
                       </p>
                       <hr />
-                      <p class="col-sm-6 py-2 px-4 py-md-3">
-                        <strong>Dax J b2b Kobosil </strong>
+                      <p class="col-6 py-2 px-4 py-md-3">
+                        <strong>Dax Kobosilmin</strong>
                       </p>
                       <p
-                        class="col-sm-6 py-2 px-4 py-md-3 text-right"
+                        class="col-6 py-2 px-4 py-md-3 text-right"
                         style="text-align: right"
                       >
-                        <strong>16am</strong>
+                        <strong>4pm</strong>
                       </p>
                     </div>
                   </div>
@@ -413,11 +416,10 @@
         </div>
       </section>
 
-      <!-- SOL -->
+      <!-- Lineup -->
 
-      <!-- Facu -->
-
-      <section class="container-fluid">
+      <!-- Radio -->
+      <section class="container-fluid my-5 py-5" id="radio">
         <div class="row">
           <div class="col-12">
             <div
@@ -438,43 +440,46 @@
           </div>
         </div>
       </section>
+      <!-- Radio -->
 
-      <!-- Termina Facu -->
-    </div>
-    <!-- Luqui -->
-    <div class="row row-background">
-      <footer>
-        <div class="row align-items-start px-4 py-3">
-          <div
-            class="col-12 col-md-3 align-items-center justify-content-center"
-          >
-            <div class="title mb-4 mb-md-0">
-              Nombre alumnos
-              <p class="txt-footer">Antonella Jotayan</p>
-              <p class="txt-footer">Hubert Lucas</p>
-              <p class="txt-footer">Cappone Sol</p>
-              <p class="txt-footer">Scuderi Facundo</p>
-              <p class="txt-footer">Acosta Alejandro</p>
+      <!-- Footer -->
+      <div class="row row-background">
+        <footer>
+          <div class="row align-items-start px-4 py-3">
+            <div
+              class="col-12 col-md-3 align-items-center justify-content-center"
+            >
+              <div class="title mb-4 mb-md-0">
+                Nombre alumnos
+                <p class="txt-footer">Antonella Jotayan</p>
+                <p class="txt-footer">Hubert Lucas</p>
+                <p class="txt-footer">Cappone Sol</p>
+                <p class="txt-footer">Scuderi Facundo</p>
+                <p class="txt-footer">Acosta Alejandro</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0 title">
+              Carrera
+              <p class="txt-footer">Diseño multimedial</p>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0 title">
+              Materia
+              <p class="txt-footer">
+                Desarrollo de aplicaciones<br />
+                multiplataforma
+              </p>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0 title year">
+              Año
+              <p class="txt-footer">2022</p>
             </div>
           </div>
-          <div class="col-12 col-md-3 mb-4 mb-md-0 title">
-            Carrera
-            <p class="txt-footer">Diseño multimedial</p>
-          </div>
-          <div class="col-12 col-md-3 mb-4 mb-md-0 title">
-            Materia
-            <p class="txt-footer">Desarrollo de aplicaciones multiplataforma</p>
-          </div>
-          <div class="col-12 col-md-3 mb-4 mb-md-0 title year">
-            Año
-            <p class="txt-footer">2022</p>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
+      <!-- Footer -->
     </div>
-    <!-- Luqui -->
-
     <script
+      type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"

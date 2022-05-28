@@ -24,8 +24,24 @@
   margin: 0 auto !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black !important;
+}
+
+.buttonPersonalized {
+  min-width: 10rem;
+  height: 3rem !important;
+}
+
+.buttonContainer {
+  min-width: 8rem !important;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto-Bold";
 }
 
 .bigTitle {
@@ -35,17 +51,20 @@ body {
   margin-bottom: 2rem;
   max-width: 80%;
 }
+
 .titlePersonalized {
   font-family: "Roboto-Medium";
   font-size: 1.7rem;
   color: white;
 }
+
 .timePersonalized {
   font-family: "Roboto-Regular";
   color: white;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
 .cardPersonalized {
   background-color: white;
   padding: 0.5rem !important;
@@ -53,6 +72,7 @@ body {
   border-radius: 0 !important;
   height: 100% !important;
 }
+
 .cardContainer {
   height: 100% !important;
 }
@@ -62,12 +82,14 @@ body {
   color: #ff28a9;
   font-size: 1.2rem;
 }
+
 .cardArtist {
   color: black;
   font-family: "Roboto-Regular";
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+
 .cardExtra {
   color: black;
   font-family: "Roboto-Light";
@@ -81,42 +103,6 @@ body {
   padding: 0;
   margin-bottom: 0.5rem;
 }
-
-@media (max-width: 600px) {
-  .cardContainer {
-    height: auto !important;
-  }
-  .cardTitle {
-    font-size: 1rem;
-  }
-  .cardArtist {
-    font-size: 1rem;
-  }
-  .cardExtra {
-    font-size: 0.8rem;
-  }
-  .bigTitle {
-    font-family: "Roboto-Bold";
-    font-size: 1.4rem;
-    color: white;
-    margin-bottom: 2rem;
-    padding: 0 2.7rem 0 2.7rem;
-  }
-  .titlePersonalized {
-    font-family: "Roboto-Medium";
-    font-size: 1.4rem;
-    color: white;
-  }
-  .timePersonalized {
-    font-family: "Roboto-Regular";
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* 
-Empieza CSS de Facu */
 
 .section_spotify {
   width: 100%;
@@ -135,15 +121,6 @@ Empieza CSS de Facu */
   width: 70%;
 }
 
-@media (min-width: 600px) {
-  .frame_spotify {
-    width: 40%;
-  }
-}
-
-/* Termina CSS de Facu */
-
-/* Css luqui */
 footer {
   margin-top: 5rem !important;
   padding-top: 20px;
@@ -158,20 +135,20 @@ footer {
 .txt-footer {
   font-family: "Roboto-Regular";
 }
-/* Css luqui */
 
-/* Css Ale */
-.bigger-title{
+.bigger-title {
   font-family: "Roboto-Bold";
   font-size: 2rem;
   color: white;
   margin-bottom: 2rem;
-  max-width: 80%;
+  padding: 0 1rem;
 }
+
 .bg-transparent {
   background-color: transparent;
 }
-.btn-color{
+
+.btn-color {
   height: 6%;
   background-color: #ffffff;
   border: none;
@@ -179,6 +156,7 @@ footer {
   text-decoration: none;
   color: black;
 }
+
 .btn-color:hover {
   background-color: transparent;
   border: 2px solid white;
@@ -197,17 +175,16 @@ footer {
 .row-background {
   background-color: black;
 }
-.header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-  height: 100vh;
-}
-/* Css Ale */
 
-/* Sol */
+.header {
+  height: 80vh;
+}
+
 .accordionPersonalized p {
   color: white;
   font-family: "Roboto-Regular";
 }
+
 .accordion-button,
 .accordion-button:not(.collapsed) {
   color: black !important;
@@ -222,4 +199,64 @@ hr {
   color: white !important;
 }
 
-/* Sol */
+@media (min-width: 600px) {
+  .frame_spotify {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: "30";
+    height: "24";
+  }
+
+  .lineUp {
+    width: 90%;
+  }
+
+  .bigger-title {
+    font-size: 1.5rem !important;
+  }
+
+  .buttonPersonalized {
+    width: 70%;
+  }
+
+  .cardContainer {
+    height: auto !important;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardArtist {
+    font-size: 1rem;
+  }
+
+  .cardExtra {
+    font-size: 0.8rem;
+  }
+
+  .bigTitle {
+    font-family: "Roboto-Bold";
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 0 2.7rem 0 2.7rem;
+  }
+
+  .titlePersonalized {
+    font-family: "Roboto-Medium";
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .timePersonalized {
+    font-family: "Roboto-Regular";
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
