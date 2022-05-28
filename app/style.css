@@ -25,7 +25,11 @@
 }
 .footer-style {
   margin: 0 !important;
-  padding: 1.5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 .footer-style div {
   width: 100%;
