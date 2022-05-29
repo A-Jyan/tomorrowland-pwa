@@ -199,13 +199,37 @@ hr {
   color: white !important;
 }
 
+#containerFooter{
+  margin-top: 1.5rem!important;
+  margin-bottom: 3rem!important;
+  max-width: 100%!important;
+}
+
+.imgFooter{
+  max-width: 80%!important;
+}
+
 @media (min-width: 600px) {
   .frame_spotify {
     width: 40%;
   }
 }
 
+@media (min-width: 600px) {
+  .imgFooter{
+    max-width: 15%!important;
+  }
+}
+
 @media (max-width: 600px) {
+  .imgFooter{
+    max-width: 15%!important;
+  }
+
+  #containerFooter{
+    max-width: 100%;
+  }
+
   #logo {
     width: "30";
     height: "24";
