@@ -199,14 +199,14 @@ hr {
   color: white !important;
 }
 
-#containerFooter{
-  margin-top: 1.5rem!important;
-  margin-bottom: 3rem!important;
-  max-width: 100%!important;
+#containerFooter {
+  margin-top: 1.5rem !important;
+  margin-bottom: 3rem !important;
+  max-width: 100% !important;
 }
 
-.imgFooter{
-  max-width: 80%!important;
+.imgFooter {
+  max-width: 80% !important;
 }
 
 @media (min-width: 600px) {
@@ -216,17 +216,17 @@ hr {
 }
 
 @media (min-width: 600px) {
-  .imgFooter{
-    max-width: 15%!important;
+  .imgFooter {
+    max-width: 15% !important;
   }
 }
 
 @media (max-width: 600px) {
-  .imgFooter{
-    max-width: 15%!important;
+  .imgFooter {
+    max-width: 15% !important;
   }
 
-  #containerFooter{
+  #containerFooter {
     max-width: 100%;
   }
 
